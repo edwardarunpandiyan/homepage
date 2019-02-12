@@ -12,7 +12,7 @@ h3{font-size:1.3rem;}
 h4{font-size:1.2rem;}
 h5{font-size:1.15rem;}
 h6{font-size:1.1rem;}
-p{font-size:0.94rem;}
+p{font-size:1rem;}
 .body-container{
     margin:0;
     padding:0;
@@ -214,8 +214,6 @@ input{
 	border-bottom-style:outset;
 	border-bottom-width:0.5px;
 	border-radius:5px;
-
-
 }
 a{
     text-decoration:none;
@@ -227,8 +225,6 @@ button:hover{
 }
 .opaq{
     opacity:0.6;
-    font-size:1.7rem;
-    line-height:3rem;
 }
 .trans{
 	opacity:0.6;
@@ -345,8 +341,8 @@ button:hover{
 	align-items:center;
 	justify-content:center;
 }
-.contact_4{
-    margin:auto;
+.c{
+	margin:auto;
 }
 .contact_1 button{
     border:none;
@@ -419,7 +415,7 @@ button:hover{
 	background-color:#c1c1c1;
 	padding:0.4rem;
 	width:6rem;
-     height:1rem;
+    height:1rem;
 	opacity:0.9;
 	text-align:center;
 }
@@ -472,6 +468,11 @@ button:hover{
 }
 .nav_item_lap a{
 	text-align:center;
+    height:5rem;
+    width:10rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 .lap{
 	flex-basis:60%;
@@ -479,6 +480,9 @@ button:hover{
 .avatar{
     width:75%;
     margin:auto;
+}
+.avatar h2{
+	color:#DC143C;
 }
 .line{
 	border:1px solid #f1f1f1;
@@ -522,15 +526,6 @@ button:hover{
     .team_2{
     display:flex;
     flex-direction:column;
-    }
-    .avatar{
-    width:40%;
-    margin:auto;
-    }
-    .team_2_1,.team_2_2,.team_2_3{
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
     }
     .display-promo_2{
     display:flex;
@@ -592,6 +587,9 @@ button:hover{
 	.lap{
     display:none;
 	}
+	.avatar{
+	padding-bottom:4rem;
+	}
 }
 
 @media (min-width:320px) and (max-width:479px){
@@ -609,6 +607,9 @@ button:hover{
 	}
 	.lap{
     display:none;
+	}
+	.avatar{
+	padding-bottom:4rem;
 	}
 }
 
@@ -651,6 +652,9 @@ button:hover{
 	.lap{
 	display:none;
 	}
+	.avatar{
+	padding-bottom:4rem;
+	}
 }
 
 
@@ -691,6 +695,16 @@ button:hover{
     margin-top:3rem;
     box-shadow:0;
     } 
+    .team_2_1,.team_2_2,.team_2_3{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    }
+    .avatar{
+    width:40%;
+    height:30rem;
+    margin:auto;
+    }
 }
 @media (min-width:768px) and (max-width:1023px){
     h1{font-size:2.7rem;}
@@ -749,6 +763,16 @@ button:hover{
     margin-top:3rem;
     box-shadow:0;
     }
+    .team_2_1,.team_2_2,.team_2_3{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    }
+    .avatar{
+    width:40%;
+    height:40rem;
+    margin:auto;
+    }
 }
 
 @media (min-width:1024px)and (max-width:1119px){
@@ -804,6 +828,16 @@ button:hover{
     .lap{
     display:block;
     }
+    .team_2_1,.team_2_2,.team_2_3{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    }
+    .avatar{
+    width:40%;
+    height:40rem;
+    margin:auto;
+    }
 }
 
 @media (min-width:1120px){
@@ -858,5 +892,15 @@ button:hover{
     }
     .lap{
     display:block;
+    }
+    .team_2_1,.team_2_2,.team_2_3{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    }
+    .avatar{
+    width:40%;
+    height:40rem;
+    margin:auto;
     }
 }
