@@ -45,10 +45,15 @@ p{font-size:1rem;}
     margin-top: 5rem;
 }
 .about_1,.about_2_1,.team_1,.team_2,
-.promo_2_1,.work_1,.work_2,.price_1,.price_2,
+.promo_2_1,.work_1,.price_1,.price_2,
 .contact_1,.display-footer{
     display:flex;
     flex-direction:column;
+}
+.work_2{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 }
 .header_1{
     color:#ffffff;
@@ -82,6 +87,9 @@ p{font-size:1rem;}
     box-shadow:4px 4px 10px #000000;
     margin-bottom:2rem;
     background-color:#ffffff;
+}
+.base{
+	height:300px;
 }
 .promo_2_1{
     align-items:center;
@@ -298,9 +306,6 @@ button:hover{
 .card{
     box-shadow:0 0.1rem 1rem black;
 }
-/*.card a:hover:last-child{
-    background-color:#c1c1c1;
-}*/
 .icon{
     width:2rem;
     padding-left:1rem;
@@ -452,13 +457,24 @@ button:hover{
     font-size:2rem;
 }
 .parallax-bg{
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 130%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.sw-container{
+     width: 100%;
+     padding-top: 50px;
+     padding-bottom: 50px;
+}
+.sw-slide{
+     background-position: center;
+     background-size: cover;
+     width: 300px;
+     height: 300px;
 }
 .nav_item_lap{
     display:flex;
@@ -473,6 +489,7 @@ button:hover{
     display: flex;
     align-items:center;
     justify-content: center;
+    color:#ffffff;
 }
 .lap{
 	flex-basis:60%;
@@ -697,8 +714,17 @@ button:hover{
     } 
     .team_2_1,.team_2_2,.team_2_3{
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content:space-between;
+    }
+    .team_2_1{
+    order:2;
+    }
+    .team_2_2{
+    order:1;
+    }
+    .team_2_3{
+    order:3;
     }
     .avatar{
     width:40%;
@@ -768,9 +794,18 @@ button:hover{
     flex-direction:row;
     justify-content:space-between;
     }
+    .team_2_1{
+    order:2;
+    }
+    .team_2_2{
+    order:1;
+    }
+    .team_2_3{
+    order:3;
+    }
     .avatar{
     width:40%;
-    height:40rem;
+    height:30rem;
     margin:auto;
     }
 }
@@ -814,7 +849,7 @@ button:hover{
     font-size:3.5rem;
 }
     .pos{
-    position:inherit;
+    position:fixed;
     }
     .display-header{
     margin-top: 0rem;
@@ -833,10 +868,23 @@ button:hover{
     flex-direction:row;
     justify-content:space-between;
     }
+    .team_2_1{
+    order:2;
+    }
+    .team_2_2{
+    order:1;
+    }
+    .team_2_3{
+    order:3;
+    }
     .avatar{
     width:40%;
-    height:40rem;
+    height:33rem;
     margin:auto;
+    }
+    .display-nav{
+    background-color:#000000;
+    opacity:0.7;
     }
 }
 
@@ -879,7 +927,7 @@ button:hover{
     font-size:3.5rem;
 }
     .pos{
-    position:inherit;
+    position:fixed;
     }
     .display-header{
     margin-top: 0rem;
@@ -898,9 +946,22 @@ button:hover{
     flex-direction:row;
     justify-content:space-between;
     }
+    .team_2_1{
+    order:2;
+    }
+    .team_2_2{
+    order:1;
+    }
+    .team_2_3{
+    order:3;
+    }
     .avatar{
     width:40%;
-    height:40rem;
+    height:35rem;
     margin:auto;
+    }
+    .display-nav{
+    background-color:#000000;
+    opacity:0.7;
     }
 }
