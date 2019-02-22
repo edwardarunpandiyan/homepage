@@ -832,10 +832,13 @@ button:hover{
     width:300px;
     }
    	.map{
-  	display: block;
+  	display: none;
     }
     .map_320{
     display: none;
+    }
+    .map_lap{
+    display: block;
     }
      .size_service{
     width:300px;
@@ -910,10 +913,13 @@ button:hover{
     width:350px;
     }
     .map{
-    display: block;
+    display: none;
     }
     .map_320{
     display: none;
+    }
+    .map_lap{
+    display: block;
     }
     .size_service{
     width:300px;
