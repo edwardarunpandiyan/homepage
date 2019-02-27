@@ -403,7 +403,7 @@ button:hover{
     line-height: 1.5rem;
 }
 .nav_item{
-	background-color:#ffffff;
+	background-color:#000000;
 	height:3rem;
 	display:flex;
 	flex-wrap:nowrap;
@@ -413,16 +413,16 @@ button:hover{
 	width:100%;
 	box-shadow:0 0.1rem 1rem #000000;
 	opacity:.8;
+    z-index:100;
 }
 .nav_item a{
-	border:1px solid #c1c1c1;
-	border-radius:.5rem;
-	background-color:#c1c1c1;
-	padding:0.4rem;
-	width:6rem;
-    height:1rem;
-	opacity:0.9;
 	text-align:center;
+    height:3rem;
+    width:10rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:#ffffff;
 }
 #mysidebar{
 	display:none;
@@ -516,8 +516,12 @@ button:hover{
 	flex-direction:column;
 	align-items:flex-start;
 }
-.lap a:hover,.lap a:focus{
+.lap a:hover,.lap a:focus,.tab a:hover,.tab a:focus{
     background-color:#157DEC;
+}
+.socialsize{
+    width:15px;
+    height:15px;
 }
 @media (orientation: landscape){
     h1{font-size:2.4rem;}
@@ -595,6 +599,15 @@ button:hover{
 }
 
 @media (max-width:319px){
+	.map{
+	display: none;
+	}
+	.map_320{
+	display: block;
+	}
+	.map_lap{
+	display: none;
+	}
 	.mob{
 	display: block;
 	}
@@ -615,6 +628,9 @@ button:hover{
 	}
 	.map_320{
     display: block;
+	}
+	.map_lap{
+	display: none;
 	}
 	.mob{
 	display: block;
@@ -649,6 +665,9 @@ button:hover{
     .map_320{
     display: none;
     }
+    .map_lap{
+    display: none;
+    }
     .size_service{
     width:150px;
     height:150px;   
@@ -659,7 +678,7 @@ button:hover{
     }
     .swip-slide b{
     font-size:2.5rem;
-}
+    }
     .mob{
     display: block;
     }
@@ -682,6 +701,9 @@ button:hover{
     .map_320{
 	display: none;
     }
+    .map_lap{
+    display: none;
+    }
     .size_service{
     width:200px;
     height:200px;   
@@ -690,9 +712,9 @@ button:hover{
     font-size:2.5rem;
     line-height:2.5rem;
     }
-.swip-slide b{
+    .swip-slide b{
     font-size:3rem;
-}
+    }
     .pos{
     position:inherit;
     }
@@ -731,6 +753,13 @@ button:hover{
     height:30rem;
     margin:auto;
     }
+    .box-img{
+    width:35%;
+    }
+    .socialsize{
+    width:20px;
+    height:20px;
+    }
 }
 @media (min-width:768px) and (max-width:1023px){
     h1{font-size:2.7rem;}
@@ -759,6 +788,9 @@ button:hover{
     .map_320{
     display: none;
     }
+    .map_lap{
+    display: none;
+    }
     .size_service{
     width:250px;
     height:250px;   
@@ -767,9 +799,9 @@ button:hover{
     font-size:2.75rem;
     line-height:2.75rem;
     }
-.swip-slide b{
+    .swip-slide b{
     font-size:3.25rem;
-}
+    }
     .pos{
     position:inherit;
     }
@@ -808,6 +840,13 @@ button:hover{
     height:30rem;
     margin:auto;
     }
+    .box-img{
+    width:35%;
+    }
+    .socialsize{
+    width:20px;
+    height:20px;
+    }
 }
 
 @media (min-width:1024px)and (max-width:1119px){
@@ -840,7 +879,7 @@ button:hover{
     .map_lap{
     display: block;
     }
-     .size_service{
+    .size_service{
     width:300px;
     height:300px;   
     }   
@@ -848,9 +887,9 @@ button:hover{
     font-size:3rem;
     line-height:3rem;
     }
-.swip-slide b{
+    .swip-slide b{
     font-size:3.5rem;
-}
+    }
     .pos{
     position:fixed;
     }
@@ -888,6 +927,13 @@ button:hover{
     .display-nav{
     background-color:#000000;
     opacity:0.7;
+    }
+    .box-img{
+    width:35%;
+    }
+    .socialsize{
+    width:25px;
+    height:25px;
     }
 }
 
@@ -929,9 +975,9 @@ button:hover{
     font-size:3rem;
     line-height:3rem;
     }
-.swip-slide b{
+    .swip-slide b{
     font-size:3.5rem;
-}
+    }
     .pos{
     position:fixed;
     }
@@ -969,5 +1015,12 @@ button:hover{
     .display-nav{
     background-color:#000000;
     opacity:0.7;
+    }
+    .box-img{
+    width:35%;
+    }
+    .socialsize{
+    width:25px;
+    height:25px;
     }
 }
